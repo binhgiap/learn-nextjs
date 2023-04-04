@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Content from './Content';
 import Sidebar from './Sidebar';
 import Head from 'next/head';
+import Header from './Header';
 
 const StyledContainer = styled.div`
   width: 100%;
@@ -20,6 +21,7 @@ const MainLayout = (props: Props) => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Header />
       <StyledContainer>{props.children}</StyledContainer>
     </>
   );
